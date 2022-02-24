@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
+import logo from "../../images/vas-logo.png";
+
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
 
@@ -16,9 +18,7 @@ export default function Navbar() {
       <Container>
         <Content>
           <Link to="/">
-            <a style={{ height: 16 }}>
-              <Logo src="/assets/shared/logo.svg" alt="Photosnap" />
-            </a>
+            <Logo src={logo} alt="Vas Photography" />
           </Link>
           <MenuToggler
             type="button"
@@ -29,19 +29,15 @@ export default function Navbar() {
             <span></span>
           </MenuToggler>
           <Nav className={`${menuOpen && "open"}`}>
-            {["stories", "features", "pricing"].map((link) => (
-              <Link key={link} to={`/${link}`}>
-                <NavLink>{link}</NavLink>
-              </Link>
+            {["stories", "about", "pricing"].map((link) => (
+              <NavLink key={link} to={`/${link}`}>
+                {link}
+              </NavLink>
             ))}
             <Divider />
-            <Link to="/">
-              <InviteLinkMobile>Get an invite</InviteLinkMobile>
-            </Link>
+            <InviteLinkMobile to="/">Contact</InviteLinkMobile>
           </Nav>
-          <Link to="/">
-            <InviteLinkDesktop>Get an invite</InviteLinkDesktop>
-          </Link>
+          <InviteLinkDesktop to="/">Contact</InviteLinkDesktop>
         </Content>
       </Container>
     </>
@@ -85,8 +81,7 @@ const Content = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 170px;
-  height: 16px;
+  height: 80px;
 `;
 
 const MenuToggler = styled.button`
@@ -153,7 +148,7 @@ const Nav = styled.nav`
   }
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-weight: bold;
   font-size: 1.8rem;
   line-height: 2rem;
@@ -200,7 +195,7 @@ const Divider = styled.hr`
   }
 `;
 
-const InviteLinkMobile = styled.a`
+const InviteLinkMobile = styled(Link)`
   background: ${(props) => props.theme.colors.black};
   text-decoration: none;
   width: 100%;
