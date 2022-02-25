@@ -1,17 +1,22 @@
 import * as React from "react";
 import styled from "styled-components";
-// import Image from "next/image";
-// import Link from "next/link";
 import { Link } from "gatsby";
+import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
+import ArrowBlackIcon from "../../assets/shared/arrow-black.svg";
+
+interface BannerLink {
+  label: string;
+  url: string;
+}
 
 interface BannerProps {
   position: "right" | "left" | string;
   title: string;
   description: string;
-  link?: "story" | "invite" | string;
+  link?: BannerLink;
   hero?: boolean;
   image?: string;
-  blur?: string | undefined;
+  children: React.ReactElement;
 }
 
 export default function Banner({
@@ -20,60 +25,36 @@ export default function Banner({
   description,
   link,
   hero,
-  image,
-  blur,
+  children,
 }: BannerProps) {
   const isLeft = position === "left" ? true : false;
 
   return (
     <Container className={`${hero && "hero"} ${isLeft && "left"}`}>
-      <ImageContainer>
-        {/* <Image
-          objectFit="cover"
-          quality={100}
-          src={image}
-          layout="fill"
-          alt={title}
-          blurDataURL={blur}
-          placeholder="blur"
-        /> */}
-        <h1>Image here</h1>
-      </ImageContainer>
+      <ImageContainer>{children}</ImageContainer>
       <TextArea className={`${hero && "hero"}`}>
         {hero && <ColorfullLine />}
         {hero ? <Title>{title}</Title> : <SubTitle>{title}</SubTitle>}
         <Description>{description}</Description>
-        {link &&
-          (link === "story" ? (
-            <Link to="/stories">
-              <CustomLink>
-                Read the story
-                {hero ? (
-                  <img src="/assets/shared/arrow-white.svg" alt="arrow" />
-                ) : (
-                  <img src="/assets/shared/arrow-black.svg" alt="arrow" />
-                )}
-              </CustomLink>
-            </Link>
-          ) : (
-            <Link to="/">
-              <CustomLink>
-                get an invite
-                {hero ? (
-                  <img src="/assets/shared/arrow-white.svg" alt="arrow" />
-                ) : (
-                  <img src="/assets/shared/arrow-black.svg" alt="arrow" />
-                )}
-              </CustomLink>
-            </Link>
-          ))}
+        {link && (
+          <CustomLink to={link.url}>
+            {link.label}
+            {hero ? <ArrowWhiteIcon /> : <ArrowBlackIcon />}
+          </CustomLink>
+        )}
       </TextArea>
     </Container>
   );
 }
 
+Banner.defaultProps = {
+  position: "left",
+  hero: false,
+};
+
 const Container = styled.section`
   display: grid;
+  overflow: hidden;
   grid-template-rows: 27.1rem auto;
 
   @media (min-width: 768px) {
@@ -81,7 +62,7 @@ const Container = styled.section`
     grid-template-rows: 60rem 0 !important;
 
     &.hero {
-      grid-template-rows: 65rem 0 !important;
+      grid-template-rows: 60rem 0 !important;
     }
 
     &.left {
@@ -211,7 +192,7 @@ const Description = styled.p`
   }
 `;
 
-const CustomLink = styled.span`
+const CustomLink = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -219,9 +200,10 @@ const CustomLink = styled.span`
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
-    img {
+    svg {
       margin-left: 8rem;
     }
   }
@@ -233,7 +215,7 @@ const CustomLink = styled.span`
     text-align: left;
   }
 
-  img {
+  svg {
     transition: margin-left 0.3s ease;
     margin-left: 1.8rem;
   }

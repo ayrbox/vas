@@ -2,29 +2,54 @@ import React from "react";
 import styled from "styled-components";
 
 import Banner from "../components/shared/Banner";
+import { StaticImage } from "gatsby-plugin-image";
 // import StoryCard from "../components/shared/StoryCard";
 // import Features from "../components/shared/Features";
-
-// import createAndShare from "../../public/assets/home/desktop/create-and-share.jpg";
-// import beautifulStories from "../../public/assets/home/desktop/beautiful-stories.jpg";
-// import designedEveryone from "../../public/assets/home/desktop/designed-for-everyone.jpg";
-// import theMountains from "../../public/assets/stories/mountains.jpg";
-// import cityEscapes from "../../public/assets/stories/cityscapes.jpg";
-// import daysVoyage from "../../public/assets/stories/18-days-voyage.jpg";
-// import architecturals from "../../public/assets/stories/architecturals.jpg";
 
 const Home = () => {
   return (
     <main>
-      {[
+      <Banner
+        title="Capture and tresure your photo memories."
+        description="I help you capture stories of your life events. You can tresure and share it with friends and family."
+        hero={true}
+        link={{
+          label: "Learn more",
+          url: "/contact",
+        }}
+      >
+        <StaticImage
+          alt="Ring"
+          src="../images/ring.jpg"
+          objectFit="cover"
+          placeholder="tracedSVG"
+          style={{ height: "100%", width: "100%" }}
+        />
+      </Banner>
+      <Banner
+        position="right"
+        title="Beautiful stories every time"
+        description="I have years of experience in photography. I understand the emotion behind the photo and video."
+        link={{
+          label: "Learn more",
+          url: "/contact",
+        }}
+      >
+        <StaticImage
+          alt="Doggo"
+          src="../images/dog-photo.jpg"
+          objectFit="cover"
+          placeholder="tracedSVG"
+          style={{ height: "100%", width: "100%" }}
+        />
+      </Banner>
+      {/* {[
         {
           position: "left",
-          title: "Create and share your photo stories. ",
+          title: "Capture and tresure your photo memories. ",
           description:
-            "Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.",
           hero: true,
-          // image: createAndShare.src,
-          // blur: createAndShare.blurDataURL,
+          image: "ring.jpg",
           link: "invite",
         },
         {
@@ -54,11 +79,18 @@ const Home = () => {
           title={data.title}
           description={data.description}
           hero={data.hero}
-          // image={data.image}
-          // blur={data.blur}
+          image={data.image}
           link={data.link}
-        />
-      ))}
+        >
+          <StaticImage
+            alt={data.title}
+            src={`../../images/ring.jpg`}
+            objectFit="cover"
+            placeholder="tracedSVG"
+          />
+        </Banner>
+      ))} */}
+
       <StoriesList>
         {[
           {
