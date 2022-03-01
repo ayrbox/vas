@@ -1,12 +1,10 @@
+import React, { ReactElement } from "react";
 import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "gatsby";
+import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
 
 interface StoryCardProps {
-  image: {
-    src: string;
-    blurDataURL?: string | undefined;
-  };
+  image: ReactElement;
   title: string;
   author: string;
 }
@@ -14,28 +12,18 @@ interface StoryCardProps {
 export default function StoryCard({ image, title, author }: StoryCardProps) {
   return (
     <li>
-      <Link href='/stories' passHref>
-        <Content>
-          <Filter className='filter_xaczxl3' />
-          <Image
-            layout='fill'
-            src={image.src}
-            blurDataURL={image.blurDataURL}
-            placeholder='blur'
-            alt={title}
-            objectFit='cover'
-            quality={100}
-          />
-          <Title>{title}</Title>
-          <Author className='author'>by {author}</Author>
-          <Divider />
-          <CustomLink>
-            read story
-            <img src='/assets/shared/arrow-white.svg' alt='read' />
-          </CustomLink>
-          <CustomBorder className='customBorder_xtabu23' />
-        </Content>
-      </Link>
+      <Content to="/stories">
+        <Filter className="filter_xaczxl3" />
+        {image}
+        <Title>{title}</Title>
+        <Author className="author">by {author}</Author>
+        <Divider />
+        <CustomLink>
+          read story
+          <ArrowWhiteIcon />
+        </CustomLink>
+        <CustomBorder className="customBorder_xtabu23" />
+      </Content>
     </li>
   );
 }
@@ -54,7 +42,7 @@ const Filter = styled.div`
   z-index: 9;
 `;
 
-const Content = styled.a`
+const Content = styled(Link)`
   position: relative;
   width: 100%;
   height: 37.5rem;
@@ -62,16 +50,24 @@ const Content = styled.a`
   flex-direction: column;
   justify-content: flex-end;
   padding: 4rem 33px;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   text-decoration: none;
   transition: transform 0.3s ease-out;
+
+  & .gatsby-image-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
 
   &:hover {
     transform: translateY(-8%);
     z-index: 90;
 
-    img {
-      margin-left: 9rem;
+    svg {
+      margin-left: 8rem;
     }
 
     .filter_xaczxl3 {
@@ -128,7 +124,7 @@ const CustomLink = styled.span`
   display: flex;
   align-items: center;
 
-  img {
+  svg {
     margin-left: 2rem;
     transition: margin-left 0.3s ease-in-out;
   }
