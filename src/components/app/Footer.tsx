@@ -15,7 +15,7 @@ export default function Footer() {
       />
       <SocialsList>
         <li className="facebook">
-          <a href="https://www.facebook.com/vas.photography2/">
+          <a href="https://www.facebook.com/vas.photography2/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20">
               <defs>
                 <linearGradient
@@ -37,7 +37,10 @@ export default function Footer() {
           </a>
         </li>
         <li className="youtube">
-          <a href="https://www.youtube.com/channel/UCLTX-5aG-IyZDcMpqUm-qkA/">
+          <a
+            href="https://www.youtube.com/channel/UCLTX-5aG-IyZDcMpqUm-qkA/"
+            target="_blank"
+          >
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
               <defs>
                 <linearGradient
@@ -60,7 +63,7 @@ export default function Footer() {
           </a>
         </li>
         <li className="twitter">
-          <a href="https://twitter.com/vasphotography1">
+          <a href="https://twitter.com/vasphotography1" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18">
               <defs>
                 <linearGradient
@@ -83,7 +86,7 @@ export default function Footer() {
           </a>
         </li>
         <li className="instagram">
-          <a href="https://www.instagram.com/vas.photography1/">
+          <a href="https://www.instagram.com/vas.photography1/" target="_blank">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20">
               <defs>
                 <linearGradient id="a" x1="0%" x2="50%" y1="100%" y2="0%">
@@ -102,17 +105,15 @@ export default function Footer() {
         </li>
       </SocialsList>
       <Nav>
-        {["home", "stories", "features", "pricing"].map((link) => (
+        {["home", "stories", "features", "pricing", "contact"].map((link) => (
           <NavLink key={link} to={link === "home" ? "/" : `/${link}`}>
             {link}
           </NavLink>
         ))}
       </Nav>
-      <CustomLink>
-        Contact
-        <ArrowWhiteIcon />
-      </CustomLink>
-      <Copyright>Copyright 2019. All Rights Reserved</Copyright>
+      <Copyright>
+        &copy; Copyright {new Date().getFullYear()}. All Rights Reserved
+      </Copyright>
     </Container>
   );
 }
@@ -256,33 +257,6 @@ const NavLink = styled(Link)`
     @media (min-width: 950px) {
       margin: 1.9rem 0 0 0 !important;
     }
-  }
-`;
-
-const CustomLink = styled.span`
-  font-size: 13px;
-  text-transform: uppercase;
-  line-height: 16px;
-  letter-spacing: 2px;
-  display: flex;
-  align-items: center;
-  color: ${(props) => props.theme.colors.white};
-  cursor: pointer;
-  margin-bottom: 3.2rem;
-
-  &:hover svg {
-    margin-left: 9rem;
-  }
-
-  @media (min-width: 768px) {
-    margin: 0 0 0 10.9rem;
-    justify-self: start;
-    grid-column: 2/3;
-  }
-
-  svg {
-    margin-left: 2rem;
-    transition: margin-left 0.3s ease-in-out;
   }
 `;
 

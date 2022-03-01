@@ -19,8 +19,8 @@ const Home = () => {
         }}
       >
         <StaticImage
-          alt="Ring"
-          src="../images/ring.jpg"
+          alt="Featured Wedding"
+          src="../images/feature-wedding.jpg"
           objectFit="cover"
           placeholder="tracedSVG"
           style={{ height: "100%", width: "100%" }}
@@ -36,8 +36,8 @@ const Home = () => {
         }}
       >
         <StaticImage
-          alt="Doggo"
-          src="../images/dog-photo.jpg"
+          alt="Wedding Ring"
+          src="../images/ring.jpg"
           objectFit="cover"
           placeholder="tracedSVG"
           style={{ height: "100%", width: "100%" }}
