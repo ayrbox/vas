@@ -1,4 +1,12 @@
+import React from "react";
 import styled from "styled-components";
+
+import ResponsiveIcon from "../../assets/features/responsive.svg";
+import NoLimitIcon from "../../assets/features/no-limit.svg";
+import EmbededIcon from "../../assets/features/embed.svg";
+import CustomDomainIcon from "../../assets/features/custom-domain.svg";
+import BoostExposureIcon from "../../assets/features/boost-exposure.svg";
+import DragDropIcon from "../../assets/features/drag-drop.svg";
 
 interface FeaturesProps {
   complete: boolean;
@@ -7,37 +15,36 @@ interface FeaturesProps {
 export default function Features({ complete }: FeaturesProps) {
   const completeList = [
     {
-      image: "/assets/features/responsive.svg",
-      title: "100% Responsive",
+      image: <ResponsiveIcon />,
+      title: "Printed Images",
       description:
-        "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+        "Printed images can be purchased directly from your personal online gallery.",
     },
     {
-      image: "/assets/features/no-limit.svg",
-      title: "No Photo Upload Limit",
+      image: <NoLimitIcon />,
+      title: "Unlimited Hosting",
       description:
-        "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+        "Hosted securely in a private password protected gallery via personal website.",
     },
     {
-      image: "/assets/features/embed.svg",
-      title: "Available to Embed",
-      description:
-        "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. ",
+      image: <EmbededIcon />,
+      title: "Video Montage",
+      description: "A video montage of selected images will be created.",
     },
     {
-      image: "/assets/features/custom-domain.svg",
+      image: <CustomDomainIcon />,
       title: "Custom Domain",
       description:
         "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
     },
     {
-      image: "/assets/features/boost-exposure.svg",
+      image: <BoostExposureIcon />,
       title: "Boost Your Exposure",
       description:
         "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
     },
     {
-      image: "/assets/features/drag-drop.svg",
+      image: <DragDropIcon />,
       title: "Drag & Drop Image",
       description:
         "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
@@ -45,33 +52,32 @@ export default function Features({ complete }: FeaturesProps) {
   ];
   const partialList = [
     {
-      image: "/assets/features/responsive.svg",
-      title: "100% Responsive",
+      image: <ResponsiveIcon />,
+      title: "Printed Images",
       description:
-        "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+        "Printed images can be purchased directly from your personal online gallery.",
     },
     {
-      image: "/assets/features/no-limit.svg",
-      title: "No Photo Upload Limit",
+      image: <NoLimitIcon />,
+      title: "Unlimited Hosting",
       description:
-        "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+        "Hosted securely in a private password protected gallery via personal website.",
     },
     {
-      image: "/assets/features/embed.svg",
-      title: "Available to Embed",
-      description:
-        "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. ",
+      image: <EmbededIcon />,
+      title: "Video Montage",
+      description: "A video montage of selected images will be created.",
     },
   ];
   const list = complete ? completeList : partialList;
 
   return (
     <Container className={`${complete && "complete"}`}>
-      {list.map(feature => (
-        <Feature key={feature.title}>
-          <Illustration src={feature.image} alt={feature.title} />
-          <Title>{feature.title}</Title>
-          <Description>{feature.description}</Description>
+      {list.map(({ title, description, image }) => (
+        <Feature key={title}>
+          <Illustration>{image}</Illustration>
+          <Title>{title}</Title>
+          <Description>{description}</Description>
         </Feature>
       ))}
     </Container>
@@ -79,7 +85,7 @@ export default function Features({ complete }: FeaturesProps) {
 }
 
 const Container = styled.ul`
-  background: ${props => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.white};
   padding: 8rem 24px;
   list-style: none;
   display: grid;
@@ -121,13 +127,19 @@ const Container = styled.ul`
 `;
 
 const Feature = styled.li`
-  color: ${props => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.black};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
-const Illustration = styled.img`
+const Illustration = styled.div`
   width: 72px;
   height: 72px;
   object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Title = styled.h3`

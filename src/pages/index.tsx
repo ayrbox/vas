@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Banner from "../components/shared/Banner";
 import { StaticImage } from "gatsby-plugin-image";
 import StoryCard from "../components/shared/StoryCard";
+import Features from "../components/shared/Features";
 
 const Home = () => {
   return (
@@ -107,7 +108,7 @@ const Home = () => {
           </>
         ))}
       </StoriesList>
-      {/* <Features complete={false} /> */}
+      <Features complete={false} />
     </main>
   );
 };
