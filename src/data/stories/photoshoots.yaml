@@ -1,0 +1,40 @@
+name: photoshoots
+description: Studio Photoshoo
+thumbnail: ../images/photoshoots/kristin.jpg
+shoots:
+  - name: Ada
+    thumbnail: ../images/photoshoots/ada-photoshoot.jpg
+  - name: Adamn Photoshoot
+    thumbnail: ../images/photoshoots/adam-photoshop.jpg
+  - name: Chloe Cake Smash
+    thumbnail: ../images/photoshoots/chloe-cake-smash.jpg
+  - name: Cody Photoshoot
+    thumbnail: ../images/photoshoots/cody-photoshoot.jpg
+  - name: Family Xmas 2019
+    thumbnail: ../images/photoshoots/family-xmas-2019.jpg
+  - name: Giant Team Photoshoot
+    thumbnail: ../images/photoshoots/giant-team-photoshoot.jpg
+  - name: Jake Cake Smash
+    thumbnail: ../images/photoshoots/jake-cake-smash.jpg
+  - name: Kristian Cake Smash
+    thumbnail: ../images/photoshoots/kristian.jpg
+  - name: Kristin
+    thumbnail: ../images/photoshoots/kristin.jpg
+  - name: Maria Maternity
+    thumbnail: ../images/photoshoots/maria-maternity.jpg
+  - name: Molly Photoshoot
+    thumbnail: ../images/photoshoots/molly-photoshoot.jpg
+  - name: Mokey Puzzle Staff Photoshoot
+    thumbnail: ../images/photoshoots/monkey-puzzle-staff-photoshoot.jpg
+  - name: Shannon Graduation
+    thumbnail: ../images/photoshoots/shannon-graduation.jpg
+  - name: Steam Punk
+    thumbnail: ../images/photoshoots/steam-punk.jpg
+  - name: Telsa
+    thumbnail: ../images/photoshoots/telsa.jpg
+  - name: Xmas 2017
+    thumbnail: ../images/photoshoots/xmas-2017.jpg
+  - name: Xmax 2018
+    thumbnail: ../images/photoshoots/xmas-2018.jpg
+  - name: Zora
+    thumbnail: ../images/photoshoots/zora.jpg

@@ -1,0 +1,32 @@
+name: birthdays
+description: Birthday Party Photos
+thumbnail: ../images/birthdays/anna-50-bday.jpg
+shoots:
+  - name: Eva's 13th Birthday Party
+    thumbnail: ../images/birthdays/eva-13bday.jpg
+  - name: Eva & Lisa's Birthday Party
+    thumbnail: ../images/birthdays/eva-lisa-bday.jpg
+  - name: Eva & Lisa Birthday Party
+    thumbnail: ../images/birthdays/eva-lisa-birth-day.jpg
+  - name: Kristina 6th Birthday
+    year: 2015
+    thumbnail: ../images/birthdays/kristina-bday.jpg
+  - name: Kyri 30th Birthday
+    thumbnail: ../images/birthdays/kyri-30bday.jpg
+  - name: Litsa's 30th Birthday Party
+    thumbnail: ../images/birthdays/litsa-bday.jpg
+  - name: Matilda's 1st Birthday
+    thumbnail: ../images/birthdays/matilda-bday.jpg
+  - name: Prexmas
+    thumbnail: ../images/birthdays/prexmas.jpg
+  - name: Rob's 60th Surprise Party
+    thumbnail: ../images/birthdays/rob-60bday.jpg
+  - name: Sam's 30th and Shannon's 21th Birthday party
+    thumbnail: ../images/birthdays/sams-bday.jpg
+  - name: Sarah 40th
+    thumbnail: ../images/birthdays/sarah-40-bday.jpg
+  - name: Sophie & Chloe Birthday
+    year: 2015
+    thumbnail: ../images/birthdays/sophie-chole-bday.jpg
+  - name: Zack
+    thumbnail: ../images/birthdays/zack-bday.jpg

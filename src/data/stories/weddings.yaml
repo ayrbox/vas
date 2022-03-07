@@ -1,0 +1,27 @@
+name: weddings
+description: Wedding and Engagements
+thumbnail: ../images/weddings/lisa-wayne.jpg
+shoots:
+  - name: Tina and Aaron Wedding
+    thumbnail: ../images/weddings/tina-aaron.jpg
+  - name: Solo and Mary Wedding
+    thumbnail: ../images/weddings/solo-mary.jpg
+  - name: Nick and Maria Wedding
+    year: 2015
+    thumbnail: ../images/weddings/nic-maria.jpg
+  - name: Mike and Lark Wedding
+    thumbnail: ../images/weddings/mike-lark.jpg
+  - name: Micheal & Eleni
+    thumbnail: ../images/weddings/micheal-eleni.jpg
+  - name: Litsa and Faysal Wedding
+    thumbnail: ../images/weddings/lista-faysal.jpg
+  - name: Lisa & Wayne Wedding
+    thumbnail: ../images/weddings/lisa-wayne.jpg
+  - name: Johnny and Sophia
+    year: 2015
+    thumbnail: ../images/weddings/johnny-sophia.jpg
+  - name: George and Elina Engagement
+    year: 2019
+    thumbnail: ../images/weddings/george-elina.jpg
+  - name: Elena and Sotris Engagement
+    thumbnail: ../images/weddings/elena-sotris.jpg

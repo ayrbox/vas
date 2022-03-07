@@ -1,0 +1,22 @@
+name: christenings
+description: Christenings Photoshoot
+thumbnail: ../images/christenings/amelia.jpg
+shoots:
+  - name: Phoebe
+    thumbnail: ../images/christenings/phoebe.jpg
+  - name: Michael
+    thumbnail: ../images/christenings/michael.jpg
+  - name: Luke
+    thumbnail: ../images/christenings/luke.jpg
+  - name: Isabella
+    thumbnail: ../images/christenings/isabella.jpg
+  - name: George
+    thumbnail: ../images/christenings/george.jpg
+  - name: Coralia
+    thumbnail: ../images/christenings/coralia.jpg
+  - name: Bryony
+    thumbnail: ../images/christenings/bryony.jpg
+  - name: Amelia
+    thumbnail: ../images/christenings/amelia.jpg
+  - name: Alyna
+    thumbnail: ../images/christenings/alyna.jpg

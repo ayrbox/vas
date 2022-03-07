@@ -1,8 +1,8 @@
 /** @type {import('gatsby).GatsbyConfig} */
 module.exports = {
   siteMetadata: {
-    title: ``,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Vas Photography`,
+    siteUrl: `https://vas.photography`,
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -33,13 +33,13 @@ module.exports = {
         },
       },
     },
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: "data",
-        path: `${__dirname}/src/data`,
+        path: `${__dirname}/src/data/`,
       },
     },
-    `gatsby-transformer-yaml`,
   ],
 };
