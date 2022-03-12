@@ -1,40 +1,38 @@
+import React from "react";
+import { Link } from "gatsby";
 import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
+import { StaticImage } from "gatsby-plugin-image";
+import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
 
-import BgImage from "../../../public/assets/shared/bg-beta.jpg";
-
-export default function BetaInvite() {
+export default function Contact() {
   return (
     <Container>
       <ColorfullLine />
       <ImageWrapper>
-        <Image
-          src={BgImage}
-          objectFit='cover'
-          layout='fill'
-          quality={100}
-          alt='beta'
-          placeholder='blur'
+        <StaticImage
+          alt="Camera"
+          src="../images/about-camera.jpg"
+          objectFit="cover"
+          placeholder="tracedSVG"
+          style={{ height: "100%", width: "100%" }}
         />
       </ImageWrapper>
       <ContentWrapper>
         <Title>
-          We’re in beta. <br /> Get your invite <br /> today!
+          Drop me an email
+          <br /> if you like to know about more.
         </Title>
-        <Link href='/' passHref>
-          <CustomLink>
-            get an invite
-            <img src='/assets/shared/arrow-white.svg' alt='arrow' />
-          </CustomLink>
-        </Link>
+        <CustomLink to="mailto:me@vas.photography">
+          get in touch
+          <ArrowWhiteIcon />
+        </CustomLink>
       </ContentWrapper>
     </Container>
   );
 }
 
 const Container = styled.section`
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   padding: 0 33px;
   position: relative;
   height: 28.8rem;
@@ -108,7 +106,7 @@ const Title = styled.h2`
   }
 `;
 
-const CustomLink = styled.span`
+const CustomLink = styled(Link)`
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -116,9 +114,12 @@ const CustomLink = styled.span`
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
 
   &:hover {
-    img {
+    svg {
       margin-left: 8rem;
     }
   }
@@ -128,7 +129,7 @@ const CustomLink = styled.span`
     text-align: right;
   }
 
-  img {
+  svg {
     transition: margin-left 0.3s ease;
     margin-left: 1.8rem;
   }

@@ -29,7 +29,7 @@ export default function Navbar() {
             <span></span>
           </MenuToggler>
           <Nav className={`${menuOpen && "open"}`}>
-            {["stories", "about", "pricing"].map((link) => (
+            {["stories", "about"].map((link) => (
               <NavLink key={link} to={`/${link}`}>
                 {link}
               </NavLink>
