@@ -1,12 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-
+import { graphql } from "gatsby";
 import Banner from "../components/shared/Banner";
 import { StaticImage } from "gatsby-plugin-image";
 import StoryCard from "../components/shared/StoryCard";
 import Features from "../components/shared/Features";
+import { Story } from "../types";
 
-const Home = () => {
+export interface HomeProps {
+  data: {
+    allStoriesYaml: {
+      edges: Array<{ node: Story }>;
+    };
+  };
+}
+
+const Home = ({ data }: HomeProps) => {
   return (
     <main>
       <Banner
@@ -44,68 +53,13 @@ const Home = () => {
         />
       </Banner>
       <StoriesList>
-        {[
-          {
-            title: "Weddings",
-            author: "Weddings and Engagements",
-            image: (
-              <StaticImage
-                alt="Weddings"
-                src="../images/wedding.jpg"
-                objectFit="cover"
-                placeholder="tracedSVG"
-                style={{ height: "100%", width: "100%" }}
-              />
-            ),
-          },
-          {
-            title: "Christenings",
-            author: "Christenings",
-            image: (
-              <StaticImage
-                alt="Ring"
-                src="../images/christenings.jpg"
-                objectFit="cover"
-                placeholder="tracedSVG"
-                style={{ height: "100%", width: "100%" }}
-              />
-            ),
-          },
-          {
-            title: "Events",
-            author: "Private and public events",
-            image: (
-              <StaticImage
-                alt="Ring"
-                src="../images/events.jpg"
-                objectFit="cover"
-                placeholder="tracedSVG"
-                style={{ height: "100%", width: "100%" }}
-              />
-            ),
-          },
-          {
-            title: "Photoshoots",
-            author: "Personal and offical photo shoots.",
-            image: (
-              <StaticImage
-                alt="Ring"
-                src="../images/cake-smash.jpg"
-                objectFit="cover"
-                placeholder="tracedSVG"
-                style={{ height: "100%", width: "100%" }}
-              />
-            ),
-          },
-        ].map((data) => (
-          <>
-            <StoryCard
-              key={data.title}
-              image={data.image}
-              title={data.title}
-              author={data.author}
-            />
-          </>
+        {data?.allStoriesYaml?.edges.map(({ node }) => (
+          <StoryCard
+            key={node.id}
+            title={node.name}
+            image={node?.thumbnail?.childImageSharp?.image}
+            category={node.category}
+          />
         ))}
       </StoriesList>
       <Features complete={false} />
@@ -114,6 +68,31 @@ const Home = () => {
 };
 
 export default Home;
+
+export const query = graphql`
+  query HomeStories {
+    allStoriesYaml(limit: 4, skip: 8) {
+      edges {
+        node {
+          name
+          id
+          category
+          date
+          thumbnail {
+            id
+            childImageSharp {
+              image: gatsbyImageData(
+                width: 500
+                height: 500
+                placeholder: TRACED_SVG
+              )
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 const StoriesList = styled.ul`
   list-style: none;

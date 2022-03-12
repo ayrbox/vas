@@ -7,17 +7,17 @@ import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
 interface StoryCardProps {
   image: IGatsbyImageData;
   title: string;
-  author: string;
+  category: string;
 }
 
-export default function StoryCard({ image, title, author }: StoryCardProps) {
+export default function StoryCard({ image, title, category }: StoryCardProps) {
   return (
     <li>
       <Content to="/stories">
         <Filter className="filter_xaczxl3" />
         <GatsbyImage image={image} alt={title} />
         <Title>{title}</Title>
-        <Author className="author">{author}</Author>
+        <Category className="category">{category}</Category>
         <Divider />
         <CustomLink>
           view gallery
@@ -97,7 +97,7 @@ const Title = styled.strong`
   line-height: 139%;
 `;
 
-const Author = styled.address`
+const Category = styled.address`
   z-index: 10;
   position: relative;
   font-size: 1.4rem;

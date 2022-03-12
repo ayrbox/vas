@@ -29,7 +29,7 @@ export default function Hero() {
           <Title>STORIES TO LAST FOREVER</Title>
           <div>
             <Published>2015 Jul</Published>
-            <Author className="author">Wedding Party Photoshoot</Author>
+            <Category className="category">Wedding Party Photoshoot</Category>
           </div>
           <Description>
             As a photograph, I help you capture precious moments, that you can
@@ -121,7 +121,7 @@ const Published = styled.time`
   opacity: 0.75;
 `;
 
-const Author = styled.address`
+const Category = styled.address`
   display: inline;
   font-size: 1.3rem;
   line-height: 1.7rem;

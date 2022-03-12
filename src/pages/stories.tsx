@@ -3,21 +3,8 @@ import styled from "styled-components";
 import { graphql } from "gatsby";
 import Hero from "../components/stories/Hero";
 import StoryCard from "../components/shared/StoryCard";
-import { IGatsbyImageData } from "gatsby-plugin-image";
 import shuffle from "lodash/shuffle";
-
-export type Story = {
-  id: string;
-  name: string;
-  category: string;
-  date: string;
-  thumbnail: {
-    id: string;
-    childImageSharp: {
-      image: IGatsbyImageData;
-    };
-  };
-};
+import { Story } from "../types";
 
 export interface StoriesProps {
   data: {
@@ -28,8 +15,7 @@ export interface StoriesProps {
 }
 
 const Stories = ({ data }: StoriesProps) => {
-  const shuffledStories = shuffle(data.allStoriesYaml.edges);
-
+  const shuffledStories = shuffle(data?.allStoriesYaml?.edges || []);
   return (
     <main>
       <Hero />
@@ -39,7 +25,7 @@ const Stories = ({ data }: StoriesProps) => {
             key={node.id}
             title={node.name}
             image={node?.thumbnail?.childImageSharp?.image}
-            author={node.category}
+            category={node.category}
           />
         ))}
       </StoriesList>
