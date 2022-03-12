@@ -1,10 +1,11 @@
 import React, { ReactElement } from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
+import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
 
 interface StoryCardProps {
-  image: ReactElement;
+  image: IGatsbyImageData;
   title: string;
   author: string;
 }
@@ -14,12 +15,12 @@ export default function StoryCard({ image, title, author }: StoryCardProps) {
     <li>
       <Content to="/stories">
         <Filter className="filter_xaczxl3" />
-        {image}
+        <GatsbyImage image={image} alt={title} />
         <Title>{title}</Title>
-        <Author className="author">by {author}</Author>
+        <Author className="author">{author}</Author>
         <Divider />
         <CustomLink>
-          read story
+          view gallery
           <ArrowWhiteIcon />
         </CustomLink>
         <CustomBorder className="customBorder_xtabu23" />

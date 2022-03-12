@@ -1,0 +1,212 @@
+- name: Eva's 13th Birthday Party
+  category: Birthday Party Photoshoot
+  thumbnail: ./images/birthdays/eva-13bday.jpg
+- name: Eva & Lisa's Birthday Party
+  thumbnail: ./images/birthdays/eva-lisa-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Eva & Lisa Birthday Party
+  thumbnail: ./images/birthdays/eva-lisa-birth-day.jpg
+  category: Birthday Party Photoshoot
+- name: Kristina 6th Birthday
+  date: 2015
+  thumbnail: ./images/birthdays/kristina-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Kyri 30th Birthday
+  thumbnail: ./images/birthdays/kyri-30bday.jpg
+  category: Birthday Party Photoshoot
+- name: Litsa's 30th Birthday Party
+  thumbnail: ./images/birthdays/litsa-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Matilda's 1st Birthday
+  thumbnail: ./images/birthdays/matilda-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Prexmas
+  thumbnail: ./images/birthdays/prexmas.jpg
+  category: Birthday Party Photoshoot
+- name: Rob's 60th Surprise Party
+  thumbnail: ./images/birthdays/rob-60bday.jpg
+  category: Birthday Party Photoshoot
+- name: Sam's 30th and Shannon's 21th Birthday party
+  thumbnail: ./images/birthdays/sams-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Sarah 40th
+  thumbnail: ./images/birthdays/sarah-40-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Sophie & Chloe Birthday
+  date: 2015
+  thumbnail: ./images/birthdays/sophie-chole-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Zack
+  thumbnail: ./images/birthdays/zack-bday.jpg
+  category: Birthday Party Photoshoot
+- name: Phoebe
+  thumbnail: ./images/christenings/phoebe.jpg
+  category: Christenings Photoshoot
+- name: Michael
+  thumbnail: ./images/christenings/michael.jpg
+  category: Christenings Photoshoot
+- name: Luke
+  thumbnail: ./images/christenings/luke.jpg
+  category: Christenings Photoshoot
+- name: Isabella
+  thumbnail: ./images/christenings/isabella.jpg
+  category: Christenings Photoshoot
+- name: George
+  thumbnail: ./images/christenings/george.jpg
+  category: Christenings Photoshoot
+- name: Coralia
+  thumbnail: ./images/christenings/coralia.jpg
+  category: Christenings Photoshoot
+- name: Bryony
+  thumbnail: ./images/christenings/bryony.jpg
+  category: Christenings Photoshoot
+- name: Amelia
+  thumbnail: ./images/christenings/amelia.jpg
+  category: Christenings Photoshoot
+- name: Alyna
+  thumbnail: ./images/christenings/alyna.jpg
+  category: Christenings Photoshoot
+- name: Tina
+  thumbnail: ./images/events/tina-graduation.jpg
+  category: Events
+- name: Step To Step 2019
+  thumbnail: ./images/events/step-2-step.jpg
+  category: Events
+- name: Sarah 40th
+  thumbnail: ./images/events/sarah-40.jpg
+  category: Events
+- name: New Year 2015
+  thumbnail: ./images/events/new-year-2015.jpg
+  category: Events
+- name: Monkey Puzzle Nursery Graduates
+  date: 2020
+  category: Events
+  thumbnail: ./images/events/monkey-puzzle-2020.jpg
+- name: Monkey Puzzle Nursery Graduates
+  date: 2021
+  thumbnail: ./images/events/monkey-puzzle-nursery-2021.jpg
+  category: Events
+- name: Kyri Leaving Do
+  thumbnail: ./images/events/kyri-leaving-do.jpg
+  category: Events
+- name: Halloween Fun
+  thumbnail: ./images/events/halloween-party.jpg
+  category: Events
+- name: Greek School Yioti
+  thumbnail: ./images/events/greek-school-yioti.jpg
+  category: Events
+- name: Giant Xmas Party
+  date: 2014
+  thumbnail: ./images/events/giant-xmas-2014.jpg
+  category: Events
+- name: Giant Xmas Party
+  date: 2015
+  thumbnail: ./images/events/giant-xmas-2015.jpg
+  category: Events
+- name: Giant Bowling Event
+  thumbnail: ./images/events/giant-bowling-event.jpg
+  category: Events
+- name: Gender Reveal
+  thumbnail: ./images/events/gender-reveal.jpg
+  category: Events
+- name: Cyprus Wine Festival
+  date: 2015
+  thumbnail: ./images/events/cyprus-wine-festival-2015.jpg
+  category: Events
+- name: Chilly Festival
+  thumbnail: ./images/events/chilly-festival.jpg
+  category: Events
+- name: Ascot
+  date: 2015
+  thumbnail: ./images/events/ascot-may-2015.jpg
+  category: Events
+- name: Anna 50th Birthday
+  thumbnail: ./images/events/anna-50-birthday.jpg
+  category: Events
+- name: Ada
+  thumbnail: ./images/photoshoots/ada-photoshoot.jpg
+  category: Studio Photoshoots
+- name: Adamn Photoshoot
+  thumbnail: ./images/photoshoots/adam-photoshop.jpg
+  category: Studio Photoshoots
+- name: Chloe Cake Smash
+  thumbnail: ./images/photoshoots/chloe-cake-smash.jpg
+  category: Studio Photoshoots
+- name: Cody Photoshoot
+  thumbnail: ./images/photoshoots/cody-photoshoot.jpg
+  category: Studio Photoshoots
+- name: Family Xmas 2019
+  thumbnail: ./images/photoshoots/family-xmas-2019.jpg
+  category: Studio Photoshoots
+- name: Giant Team Photoshoot
+  thumbnail: ./images/photoshoots/giant-team-photoshoot.jpg
+  category: Studio Photoshoots
+- name: Jake Cake Smash
+  thumbnail: ./images/photoshoots/jake-cake-smash.jpg
+  category: Studio Photoshoots
+- name: Kristian Cake Smash
+  thumbnail: ./images/photoshoots/kristian.jpg
+  category: Studio Photoshoots
+- name: Kristin
+  thumbnail: ./images/photoshoots/kristin.jpg
+  category: Studio Photoshoots
+- name: Maria Maternity
+  thumbnail: ./images/photoshoots/maria-maternity.jpg
+  category: Studio Photoshoots
+- name: Molly Photoshoot
+  thumbnail: ./images/photoshoots/molly-photoshoot.jpg
+  category: Studio Photoshoots
+- name: Mokey Puzzle Staff Photoshoot
+  thumbnail: ./images/photoshoots/monkey-puzzle-staff-photoshoot.jpg
+  category: Studio Photoshoots
+- name: Shannon Graduation
+  thumbnail: ./images/photoshoots/shannon-graduation.jpg
+  category: Studio Photoshoots
+- name: Steam Punk
+  thumbnail: ./images/photoshoots/steam-punk.jpg
+  category: Studio Photoshoots
+- name: Telsa
+  thumbnail: ./images/photoshoots/telsa.jpg
+  category: Studio Photoshoots
+- name: Xmas 2017
+  thumbnail: ./images/photoshoots/xmas-2017.jpg
+  category: Studio Photoshoots
+- name: Xmax 2018
+  thumbnail: ./images/photoshoots/xmas-2018.jpg
+  category: Studio Photoshoots
+- name: Zora
+  thumbnail: ./images/photoshoots/zora.jpg
+  category: Studio Photoshoots
+- name: Tina and Aaron Wedding
+  thumbnail: ./images/weddings/tina-aaron.jpg
+  category: Wedding and Engagement
+- name: Solo and Mary Wedding
+  thumbnail: ./images/weddings/solo-mary.jpg
+  category: Wedding and Engagement
+- name: Nick and Maria Wedding
+  date: 2015
+  thumbnail: ./images/weddings/nick-maria.jpg
+  category: Wedding and Engagement
+- name: Mike and Lark Wedding
+  thumbnail: ./images/weddings/mike-lark.jpg
+  category: Wedding and Engagement
+- name: Micheal & Eleni
+  thumbnail: ./images/weddings/micheal-eleni.jpg
+  category: Wedding and Engagement
+- name: Litsa and Faysal Wedding
+  thumbnail: ./images/weddings/lista-faysal.jpg
+  category: Wedding and Engagement
+- name: Lisa & Wayne Wedding
+  thumbnail: ./images/weddings/lisa-wayne.jpg
+  category: Wedding and Engagement
+- name: Johnny and Sophia
+  date: 2015
+  category: Wedding and Engagement
+  thumbnail: ./images/weddings/johnny-sophia.jpg
+- name: George and Elina Engagement
+  date: 2019
+  thumbnail: ./images/weddings/george-elina.jpg
+  category: Wedding and Engagement
+- name: Elena and Sotris Engagement
+  thumbnail: ./images/weddings/elena-sotris.jpg
+  category: Wedding and Engagement

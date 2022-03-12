@@ -1,16 +1,48 @@
 import React from "react";
+import styled from "styled-components";
 import { graphql } from "gatsby";
 import Hero from "../components/stories/Hero";
+import StoryCard from "../components/shared/StoryCard";
+import { IGatsbyImageData } from "gatsby-plugin-image";
+import shuffle from "lodash/shuffle";
 
-const Stories = ({ data }) => {
+export type Story = {
+  id: string;
+  name: string;
+  category: string;
+  date: string;
+  thumbnail: {
+    id: string;
+    childImageSharp: {
+      image: IGatsbyImageData;
+    };
+  };
+};
+
+export interface StoriesProps {
+  data: {
+    allStoriesYaml: {
+      edges: Array<{ node: Story }>;
+    };
+  };
+}
+
+const Stories = ({ data }: StoriesProps) => {
+  const shuffledStories = shuffle(data.allStoriesYaml.edges);
+
   return (
     <main>
       <Hero />
-      <div>
-        <pre style={{ backgroundColor: "white" }}>
-          {JSON.stringify(data, null, 2)}
-        </pre>
-      </div>
+      <StoriesList>
+        {shuffledStories.map(({ node }) => (
+          <StoryCard
+            key={node.id}
+            title={node.name}
+            image={node?.thumbnail?.childImageSharp?.image}
+            author={node.category}
+          />
+        ))}
+      </StoriesList>
     </main>
   );
 };
@@ -20,12 +52,18 @@ export const query = graphql`
     allStoriesYaml {
       edges {
         node {
-          description
           name
           id
+          category
+          date
           thumbnail {
+            id
             childImageSharp {
-              gatsbyImageData(width: 400, height: 400)
+              image: gatsbyImageData(
+                width: 500
+                height: 500
+                placeholder: TRACED_SVG
+              )
             }
           }
         }
@@ -35,3 +73,16 @@ export const query = graphql`
 `;
 
 export default Stories;
+
+const StoriesList = styled.ul`
+  list-style: none;
+  display: grid;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`;
