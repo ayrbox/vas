@@ -1,51 +1,40 @@
+import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
-import HeroImage from "../../../public/assets/stories/moon-of-appalacia.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Hero() {
   return (
     <Container>
       <MobileImageDesktop>
-        <Image
-          src={HeroImage}
-          layout='fill'
-          objectFit='cover'
-          placeholder='blur'
-          alt='background'
+        <StaticImage
+          src="../../images/stories-hero.jpg"
+          objectFit="cover"
+          placeholder="tracedSVG"
+          alt="background"
           quality={100}
         />
       </MobileImageDesktop>
       <div style={{ position: "relative" }}>
         <HeroImageDesktop>
-          <Image
-            src={HeroImage}
-            layout='fill'
-            objectFit='cover'
-            placeholder='blur'
-            alt='background'
+          <StaticImage
+            src="../../images/stories-hero.jpg"
+            objectFit="cover"
+            placeholder="tracedSVG"
+            alt="background"
             quality={100}
           />
         </HeroImageDesktop>
         <TextArea>
-          <Featured>LAST MONTH’S FEATURED STORY</Featured>
-          <Title>HAZY FULL MOON OF APPALACHIA</Title>
+          <Featured>LET ME HELP YOU TELL YOUR STORIES</Featured>
+          <Title>STORIES TO LAST FOREVER</Title>
           <div>
-            <Published>March 2nd 2020</Published>
-            <Author className='author'>by John Appleseed</Author>
+            <Published>2015 Jul</Published>
+            <Author className="author">Wedding Party Photoshoot</Author>
           </div>
           <Description>
-            The dissected plateau area, while not actually made up of geological
-            mountains, is popularly called &quot;mountains&quot;, especially in
-            eastern Kentucky and West Virginia, and while the ridges are not
-            high, the terrain is extremely rugged.
+            As a photograph, I help you capture precious moments, that you can
+            share the stories in photograph that last a lifetime.
           </Description>
-          <Link href='/stories' passHref>
-            <CustomLink>
-              Read the story
-              <img src='/assets/shared/arrow-white.svg' alt='arrow' />
-            </CustomLink>
-          </Link>
         </TextArea>
       </div>
     </Container>
@@ -63,6 +52,7 @@ const Container = styled.section`
 
 const MobileImageDesktop = styled.div`
   position: relative;
+  overflow: hidden;
 `;
 
 const HeroImageDesktop = styled.div`
@@ -72,6 +62,14 @@ const HeroImageDesktop = styled.div`
   @media (min-width: 768px) {
     display: unset;
   }
+
+  & .gatsby-image-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 `;
 
 const TextArea = styled.div`
@@ -79,7 +77,7 @@ const TextArea = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   position: relative;
   max-width: 1600px;
   margin: auto;
@@ -106,7 +104,7 @@ const Title = styled.h1`
   margin-bottom: 1.6rem;
 
   @media (min-width: 768px) {
-    max-width: 10ch;
+    max-width: 15ch;
     font-size: 4rem;
     letter-spacing: 0.41rem;
   }
@@ -143,26 +141,5 @@ const Description = styled.p`
 
   @media (min-width: 950px) {
     font-size: 1.7rem;
-  }
-`;
-
-const CustomLink = styled.span`
-  display: flex;
-  align-items: center;
-  font-size: 1.3rem;
-  line-height: 1.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.25rem;
-  cursor: pointer;
-
-  &:hover {
-    img {
-      margin-left: 8rem;
-    }
-  }
-
-  img {
-    transition: margin-left 0.3s ease;
-    margin-left: 1.8rem;
   }
 `;
