@@ -59,6 +59,8 @@ const Home = ({ data }: HomeProps) => {
             title={node.name}
             image={node?.thumbnail?.childImageSharp?.image}
             category={node.category}
+            date={node.date}
+            url={node.url}
           />
         ))}
       </StoriesList>
@@ -78,6 +80,7 @@ export const query = graphql`
           id
           category
           date
+          url
           thumbnail {
             id
             childImageSharp {

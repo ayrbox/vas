@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
@@ -8,16 +8,28 @@ interface StoryCardProps {
   image: IGatsbyImageData;
   title: string;
   category: string;
+  date?: string;
+  url: string;
 }
 
-export default function StoryCard({ image, title, category }: StoryCardProps) {
+export default function StoryCard({
+  image,
+  title,
+  category,
+  date,
+  url,
+}: StoryCardProps) {
   return (
     <li>
-      <Content to="/stories">
+      <Content to={url} target="_blank">
         <Filter className="filter_xaczxl3" />
         <GatsbyImage image={image} alt={title} />
-        <Title>{title}</Title>
-        <Category className="category">{category}</Category>
+        <Title>
+          {title} {date && <small> ({date})</small>}
+        </Title>
+        <Category className="category">
+          <strong>{category}</strong>
+        </Category>
         <Divider />
         <CustomLink>
           view gallery

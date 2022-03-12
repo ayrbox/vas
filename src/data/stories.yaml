@@ -1,212 +1,281 @@
 - name: Eva's 13th Birthday Party
   category: Birthday Party Photoshoot
   thumbnail: ./images/birthdays/eva-13bday.jpg
+  url: https://www.vas.photography/Event/Evas-13th-Birthday-Party
 - name: Eva & Lisa's Birthday Party
   thumbnail: ./images/birthdays/eva-lisa-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Eva-Lia-Birthday-Party
 - name: Eva & Lisa Birthday Party
   thumbnail: ./images/birthdays/eva-lisa-birth-day.jpg
   category: Birthday Party Photoshoot
+  date: "2017"
+  url: https://www.vas.photography/EvaLia-2017
 - name: Kristina 6th Birthday
-  date: 2015
   thumbnail: ./images/birthdays/kristina-bday.jpg
   category: Birthday Party Photoshoot
+  date: Oct 2015
+  url: https://www.vas.photography/Kristina-6th-birthday-Oct-2015
 - name: Kyri 30th Birthday
   thumbnail: ./images/birthdays/kyri-30bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Event/Kyri-30th-Birthday
 - name: Litsa's 30th Birthday Party
   thumbnail: ./images/birthdays/litsa-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Litsas-30-Birthday-Party
 - name: Matilda's 1st Birthday
   thumbnail: ./images/birthdays/matilda-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Matilda-1st-Bday
 - name: Prexmas
   thumbnail: ./images/birthdays/prexmas.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Prexmas
 - name: Rob's 60th Surprise Party
   thumbnail: ./images/birthdays/rob-60bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.smugmug.com/gallery/n-Dpdxcz
 - name: Sam's 30th and Shannon's 21th Birthday party
   thumbnail: ./images/birthdays/sams-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Sams-Shannons-party
 - name: Sarah 40th
   thumbnail: ./images/birthdays/sarah-40-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Event/Sarah-40th
 - name: Sophie & Chloe Birthday
-  date: 2015
+  date: "2015"
   thumbnail: ./images/birthdays/sophie-chole-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Sophie-Chloe-Birthday-April-20
 - name: Zack
   thumbnail: ./images/birthdays/zack-bday.jpg
   category: Birthday Party Photoshoot
+  url: https://www.vas.photography/Zacks-Birthday
 - name: Phoebe
   thumbnail: ./images/christenings/phoebe.jpg
   category: Christenings Photoshoot
+  date: April 2015
+  url: https://www.vas.photography/Phoebe-Christening
 - name: Michael
   thumbnail: ./images/christenings/michael.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/Michael-Christening
 - name: Luke
   thumbnail: ./images/christenings/luke.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/Luke
 - name: Isabella
   thumbnail: ./images/christenings/isabella.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/IsabellaChristening
 - name: George
   thumbnail: ./images/christenings/george.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/George
 - name: Coralia
   thumbnail: ./images/christenings/coralia.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/Coralia-Christening
 - name: Bryony
   thumbnail: ./images/christenings/bryony.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening-1/Bryony-Christening
 - name: Amelia
   thumbnail: ./images/christenings/amelia.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Amelia-Maries-Christening
 - name: Alyna
   thumbnail: ./images/christenings/alyna.jpg
   category: Christenings Photoshoot
+  url: https://www.vas.photography/Christening
 - name: Tina
   thumbnail: ./images/events/tina-graduation.jpg
   category: Events
+  url: https://www.vas.photography/Tina
 - name: Step To Step 2019
   thumbnail: ./images/events/step-2-step.jpg
   category: Events
+  url: https://www.vas.photography/Other/Step2Step-May-2019
 - name: Sarah 40th
   thumbnail: ./images/events/sarah-40.jpg
   category: Events
+  url: https://www.vas.photography/Event/Sarah-40th
 - name: New Year 2015
   thumbnail: ./images/events/new-year-2015.jpg
   category: Events
+  url: https://www.vas.photography/New-Year-2015
 - name: Monkey Puzzle Nursery Graduates
-  date: 2020
+  date: "2020"
   category: Events
-  thumbnail: ./images/events/monkey-puzzle-2020.jpg
+  thumbnail: ./images/events/monkey-puzzle-nursery.jpg
+  url: https://www.vas.photography/Videos/Monkey-Puzzle-Nursery-Graduates-2020
 - name: Monkey Puzzle Nursery Graduates
-  date: 2021
-  thumbnail: ./images/events/monkey-puzzle-nursery-2021.jpg
+  date: "2021"
+  thumbnail: ./images/events/monkey-puzzle-nursery.jpg
+  url: https://www.vas.photography/Event/Monkey-Puzzle-Nursery-Graduates-2021
   category: Events
 - name: Kyri Leaving Do
   thumbnail: ./images/events/kyri-leaving-do.jpg
   category: Events
+  url: https://www.vas.photography/Kyri-leaving-do
 - name: Halloween Fun
   thumbnail: ./images/events/halloween-party.jpg
   category: Events
+  url: https://www.vas.photography/Halloween-fun
 - name: Greek School Yioti
   thumbnail: ./images/events/greek-school-yioti.jpg
   category: Events
+  url: https://www.vas.photography/Greek-School-Yioti
 - name: Giant Xmas Party
-  date: 2014
+  date: "2014"
   thumbnail: ./images/events/giant-xmas-2014.jpg
   category: Events
+  url: https://www.vas.photography/Giant-Xmas-Party-2014
 - name: Giant Xmas Party
-  date: 2015
+  date: "2015"
   thumbnail: ./images/events/giant-xmas-2015.jpg
   category: Events
+  url: https://www.vas.photography/GiantGroup-Xmas-2015
 - name: Giant Bowling Event
   thumbnail: ./images/events/giant-bowling-event.jpg
   category: Events
+  url: https://www.vas.photography/Giants-Bowling-Event-Central
 - name: Gender Reveal
   thumbnail: ./images/events/gender-reveal.jpg
   category: Events
+  url: https://www.vas.photography/Event/Gender-reveal
 - name: Cyprus Wine Festival
-  date: 2015
+  date: "2015"
   thumbnail: ./images/events/cyprus-wine-festival-2015.jpg
   category: Events
+  url: https://www.vas.photography/Cyprus-Wine-Festival-June-2015
 - name: Chilly Festival
   thumbnail: ./images/events/chilly-festival.jpg
   category: Events
+  url: https://www.vas.photography/Chilli-Festival-
 - name: Ascot
-  date: 2015
+  date: "2015"
   thumbnail: ./images/events/ascot-may-2015.jpg
   category: Events
+  url: https://www.vas.photography/Ascot
 - name: Anna 50th Birthday
   thumbnail: ./images/events/anna-50-birthday.jpg
   category: Events
+  url: https://www.vas.photography/Event/Anna-50th-Birthday-Party
 - name: Ada
   thumbnail: ./images/photoshoots/ada-photoshoot.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Ada
 - name: Adamn Photoshoot
   thumbnail: ./images/photoshoots/adam-photoshop.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Adam-Photoshoot
 - name: Chloe Cake Smash
   thumbnail: ./images/photoshoots/chloe-cake-smash.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Event/Chloe-Cake-Smash
 - name: Cody Photoshoot
   thumbnail: ./images/photoshoots/cody-photoshoot.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Cody-Photoshoot
 - name: Family Xmas 2019
   thumbnail: ./images/photoshoots/family-xmas-2019.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Family-Xmas-2019
 - name: Giant Team Photoshoot
   thumbnail: ./images/photoshoots/giant-team-photoshoot.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Giant-team-Photoshoot
 - name: Jake Cake Smash
   thumbnail: ./images/photoshoots/jake-cake-smash.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Jake-Cake-Smash-2020
 - name: Kristian Cake Smash
   thumbnail: ./images/photoshoots/kristian.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Kristians-cake-smash
 - name: Kristin
   thumbnail: ./images/photoshoots/kristin.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Kristin
 - name: Maria Maternity
   thumbnail: ./images/photoshoots/maria-maternity.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Maria-Maternity
 - name: Molly Photoshoot
   thumbnail: ./images/photoshoots/molly-photoshoot.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/RayLowe-Photoshoot
 - name: Mokey Puzzle Staff Photoshoot
   thumbnail: ./images/photoshoots/monkey-puzzle-staff-photoshoot.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Monkey-Puzze-Staff-photoshoot
 - name: Shannon Graduation
   thumbnail: ./images/photoshoots/shannon-graduation.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Event/Shannon-Graduation
 - name: Steam Punk
   thumbnail: ./images/photoshoots/steam-punk.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Steampunk
 - name: Telsa
   thumbnail: ./images/photoshoots/telsa.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Photoshoots/Telsa
 - name: Xmas 2017
   thumbnail: ./images/photoshoots/xmas-2017.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Xmas-2017
 - name: Xmax 2018
   thumbnail: ./images/photoshoots/xmas-2018.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Other/Xmas-2018
 - name: Zora
   thumbnail: ./images/photoshoots/zora.jpg
   category: Studio Photoshoots
+  url: https://www.vas.photography/Zora
 - name: Tina and Aaron Wedding
   thumbnail: ./images/weddings/tina-aaron.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Tina-Aaron-Wedding
 - name: Solo and Mary Wedding
   thumbnail: ./images/weddings/solo-mary.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Wedding/Solo-and-Mary-Wedding
 - name: Nick and Maria Wedding
-  date: 2015
+  date: "2015"
   thumbnail: ./images/weddings/nick-maria.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Nick-and-Maria-wedding-July-20
 - name: Mike and Lark Wedding
   thumbnail: ./images/weddings/mike-lark.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Wedding/Mike-Lak-Wedding
 - name: Micheal & Eleni
   thumbnail: ./images/weddings/micheal-eleni.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Wedding/Michael-Eleni
 - name: Litsa and Faysal Wedding
   thumbnail: ./images/weddings/lista-faysal.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Wedding/Litsa-and-Faysal-Wedding
 - name: Lisa & Wayne Wedding
   thumbnail: ./images/weddings/lisa-wayne.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Lisa-and-Wayne-Wedding
 - name: Johnny and Sophia
-  date: 2015
+  date: "2015"
   category: Wedding and Engagement
   thumbnail: ./images/weddings/johnny-sophia.jpg
+  url: https://www.vas.photography/John-and-Sophia-Weddding-Oct-2
 - name: George and Elina Engagement
-  date: 2019
+  date: "2019"
   thumbnail: ./images/weddings/george-elina.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Engagement/George-and-Elena-Engagement-June-2019
 - name: Elena and Sotris Engagement
   thumbnail: ./images/weddings/elena-sotris.jpg
   category: Wedding and Engagement
+  url: https://www.vas.photography/Engagement/Elena-and-Sotiris

@@ -3,7 +3,8 @@ export type Story = {
   id: string;
   name: string;
   category: string;
-  date: string;
+  date?: string;
+  url: string;
   thumbnail: {
     id: string;
     childImageSharp: {

@@ -26,6 +26,8 @@ const Stories = ({ data }: StoriesProps) => {
             title={node.name}
             image={node?.thumbnail?.childImageSharp?.image}
             category={node.category}
+            url={node.url}
+            date={node.date}
           />
         ))}
       </StoriesList>
@@ -42,6 +44,7 @@ export const query = graphql`
           id
           category
           date
+          url
           thumbnail {
             id
             childImageSharp {
