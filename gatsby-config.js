@@ -43,4 +43,5 @@ module.exports = {
       __key: "stories",
     },
   ],
+  pathPrefix: `/vas`,
 };
