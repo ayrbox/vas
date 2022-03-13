@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "gatsby";
-import ArrowWhiteIcon from "../../assets/shared/arrow-white.svg";
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
