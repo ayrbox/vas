@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "gatsby";
 import styled from "styled-components";
 
-import logo from "../../images/vas-logo.png";
+import logo from "../../images/vas-logo-white.png";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -80,7 +80,7 @@ const Content = styled.div`
 `;
 
 const Logo = styled.img`
-  height: 80px;
+  height: 60px;
 `;
 
 const MenuToggler = styled.button`
