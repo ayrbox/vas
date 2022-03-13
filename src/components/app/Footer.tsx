@@ -105,7 +105,7 @@ export default function Footer() {
         </li>
       </SocialsList>
       <Nav>
-        {["home", "stories", "features", "pricing", "contact"].map((link) => (
+        {["home", "stories", "about"].map((link) => (
           <NavLink key={link} to={link === "home" ? "/" : `/${link}`}>
             {link}
           </NavLink>

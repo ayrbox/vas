@@ -29,15 +29,14 @@ export default function Navbar() {
             <span></span>
           </MenuToggler>
           <Nav className={`${menuOpen && "open"}`}>
+            <NavLink to="/">Home</NavLink>
             {["stories", "about"].map((link) => (
               <NavLink key={link} to={`/${link}`}>
                 {link}
               </NavLink>
             ))}
             <Divider />
-            <InviteLinkMobile to="/">Contact</InviteLinkMobile>
           </Nav>
-          <InviteLinkDesktop to="/">Contact</InviteLinkDesktop>
         </Content>
       </Container>
     </>
@@ -192,41 +191,5 @@ const Divider = styled.hr`
 
   @media (min-width: 768px) {
     display: none;
-  }
-`;
-
-const InviteLinkMobile = styled(Link)`
-  background: ${(props) => props.theme.colors.black};
-  text-decoration: none;
-  width: 100%;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.6rem;
-  line-height: 2.1rem;
-  letter-spacing: 0.25rem;
-  color: ${(props) => props.theme.colors.white};
-  padding: 0.85em 0;
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
-
-  &:hover {
-    background: ${(props) => props.theme.colors.gray};
-    color: ${(props) => props.theme.colors.black};
-  }
-
-  @media (min-width: 768px) {
-    width: 15.8rem;
-    font-size: 1.3rem;
-  }
-
-  @media (min-width: 950px) {
-    display: none;
-  }
-`;
-
-const InviteLinkDesktop = styled(InviteLinkMobile)`
-  display: none !important;
-
-  @media (min-width: 950px) {
-    display: block !important;
   }
 `;

@@ -24,7 +24,7 @@ const Home = ({ data }: HomeProps) => {
         hero={true}
         link={{
           label: "Learn more",
-          url: "/contact",
+          url: "/about",
         }}
       >
         <StaticImage
@@ -41,7 +41,7 @@ const Home = ({ data }: HomeProps) => {
         description="I have years of experience in photography. I understand the emotion behind the photo and video."
         link={{
           label: "Learn more",
-          url: "/contact",
+          url: "/about",
         }}
       >
         <StaticImage
