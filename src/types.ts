@@ -12,3 +12,11 @@ export type Story = {
     };
   };
 };
+
+export type Price = {
+  id: string;
+  title: string;
+  description?: string;
+  duration?: string;
+  price: number;
+};

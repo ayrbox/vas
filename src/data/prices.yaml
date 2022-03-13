@@ -1,0 +1,19 @@
+- title: Wedding full day
+  description: All day from early morning till final dance
+  duration: Full day
+  price: 1000
+- title: Christenings
+  description: Church and party
+  duration: half day
+  price: 550
+- title: Evening Parties
+  description: Evening parities for engagement, birthdays or any other evening parties
+  price: 550
+- title: Photoshoots
+  description: Studio or outdoor photoshoots
+  duration: 2 hours
+  price: 250
+- title: Cake Smash
+  description: Cake Smash at party events.
+  duration: 2 hours
+  price: 250

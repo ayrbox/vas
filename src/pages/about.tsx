@@ -3,6 +3,7 @@ import React from "react";
 import Banner from "../components/shared/Banner";
 import Features from "../components/shared/Features";
 import Contact from "../components/shared/Contact";
+import PriceTable from "../components/pricing/PriceTable";
 
 const About = () => {
   return (
@@ -40,9 +41,9 @@ const About = () => {
           style={{ height: "100%", width: "100%" }}
         />
       </Banner>
-      <Features complete={true} />
-
+      <PriceTable />
       <Contact />
+      <Features complete={true} />
     </main>
   );
 };

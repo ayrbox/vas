@@ -33,21 +33,20 @@ export default function Features({ complete }: FeaturesProps) {
     },
     {
       image: <CustomDomainIcon />,
-      title: "Custom Domain",
-      description:
-        "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+      title: "Photo Access",
+      description: "You can securely access your photo from my website.",
     },
     {
       image: <BoostExposureIcon />,
-      title: "Boost Your Exposure",
+      title: "Touch Up",
       description:
-        "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+        "Your photos will be touched up to make sure you get quality photos.",
     },
     {
       image: <DragDropIcon />,
-      title: "Drag & Drop Image",
+      title: "USB Stick",
       description:
-        "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+        "You can get your photo delivered in USB Stick or Memory Card at £70 additional cost.",
     },
   ];
   const partialList = [
